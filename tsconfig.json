@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "baseUrl": "./lib",
+    "paths": {
+      "@app/*": ["./src/*"],
+      "@assets/*": ["./assets/*"]
+    }
+  },
+  "include": [
+    "lib/assets/**/*",
+    "lib/src/**/*",
+    "lib/tests/**/*",
+    "lib/types/**/*"
+  ],
+  "exclude": ["node_modules", "config/**/*", "dist"]
+}
